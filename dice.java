@@ -1,4 +1,8 @@
+package data1;
+
 import java.util.Random;
+import java.util.Scanner;
+
 
 public class dice {
 	Random rand = new Random();
@@ -17,7 +21,11 @@ public class dice {
 
 	public static void main(String[] args) {
 		dice dice = new dice();
-
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is your name?");
+		System.out.print(">  ");
+		String name = scan.nextLine();
+		System.out.println("Hello, " + name + "!");
 		System.out.println("Rolling the dice...");
 		System.out.println("Die 1:  " + dice.dice1);
 		System.out.println("Die 1:  " + dice.dice2);
