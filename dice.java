@@ -1,10 +1,5 @@
-
-
 import java.util.Random;
 import java.util.Scanner;
-
-
-
 
 public class dice {
 	Random rand = new Random();
@@ -34,9 +29,9 @@ public class dice {
 		System.out.println("Total value:  " + dice.value());
 
 		if(dice.value() > 6){
-			System.out.println("You won");
+			System.out.println(name +" won!");
 		}else{
-			System.out.println("You lost");
+			System.out.println(name +" lost");
 		}
 
 
