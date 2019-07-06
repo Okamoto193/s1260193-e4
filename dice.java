@@ -1,7 +1,9 @@
-package data1;
+
 
 import java.util.Random;
 import java.util.Scanner;
+
+
 
 
 public class dice {
@@ -30,5 +32,13 @@ public class dice {
 		System.out.println("Die 1:  " + dice.dice1);
 		System.out.println("Die 1:  " + dice.dice2);
 		System.out.println("Total value:  " + dice.value());
+
+		if(dice.value() > 6){
+			System.out.println("You won");
+		}else{
+			System.out.println("You lost");
+		}
+
+
 	}
 }
